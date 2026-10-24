@@ -1,8 +1,11 @@
 name: preflight
 
+# Paused: GitHub Actions is blocked by billing. Woodpecker runs this as
+# .woodpecker/preflight.yaml. Restore the triggers below to switch back.
+#   push:
+#   pull_request:
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
